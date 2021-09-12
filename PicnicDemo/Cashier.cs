@@ -78,14 +78,24 @@ namespace PicnicDemo
         {
             do
             {
-                string category = ConvertCharToCategory(GetCustomerCategory());
-                string itemName = ConvertCharToName(GetCustomerItem(category));
-                Item item = Store.Items[category].Find(item => item.Name.Equals(itemName));
-                int quantity = GetSaleQuantity(item);
-                bool success = Registers[category].Sale(GetCustomerPayment(item.Price * quantity));
-                if (success)
-                    item.Quantity -= quantity;
-                Console.Write("More purchases (y/n)? ");
+                try
+                {
+                    string category = ConvertCharToCategory(GetCustomerCategory());
+                    string itemName = ConvertCharToName(GetCustomerItem(category));
+                    Item item = Store.Items[category].Find(item => item.Name.Equals(itemName));
+                    int quantity = GetSaleQuantity(item);
+                    bool success = Registers[category].Sale(GetCustomerPayment(item.Price * quantity));
+                    if (success)
+                        item.Quantity -= quantity;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    Console.Write("More purchases (y/n)? ");
+                }
             } while (Console.ReadLine().ToLower()[0].Equals('y'));
         }
 
@@ -105,10 +115,14 @@ namespace PicnicDemo
         }
 
         // lookup item based on first letter
-        public string ConvertCharToName(char name)
+        public string ConvertCharToName(char first)
         {
             // this only works because each item in this assignment has a unique first letter
-            return Store.Items.Values.Aggregate(new List<Item>(), (x, y) => x.Concat(y).ToList()).Find(item => item.Name[0].Equals(name)).Name;
+            var item = Store.Items.Values.Aggregate(new List<Item>(), (x, y) => x.Concat(y).ToList()).Find(item => item.Name[0].Equals(first));
+            if (item != null)
+                return item.Name;
+            else
+                throw new Exception("Unable to find item using that character, try again");
         }
     }
 }
