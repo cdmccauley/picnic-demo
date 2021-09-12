@@ -1,0 +1,16 @@
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.exe
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.deps.json
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.runtimeconfig.json
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.runtimeconfig.dev.json
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.dll
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\ref\PicnicDemo.dll
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\bin\Debug\net5.0\PicnicDemo.pdb
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.csproj.AssemblyReference.cache
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.AssemblyInfoInputs.cache
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.AssemblyInfo.cs
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.dll
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\ref\PicnicDemo.dll
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.pdb
+C:\Users\Chris\Downloads\github\PicnicDemo\PicnicDemo\obj\Debug\net5.0\PicnicDemo.genruntimeconfig.cache
